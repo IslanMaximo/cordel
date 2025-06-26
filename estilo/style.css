@@ -2,7 +2,7 @@
 
  @font-face {
             font-family: 'comic';
-            src: url('fonts/comicneuesansid/ComicNeueSansID.ttf') format('opentype');
+            src: url('../fonts/comicneuesansid/ComicNeueSansID.ttf') format('opentype');
             font-weight: bold;
         }
         :root {
@@ -14,25 +14,52 @@
             padding: 0%;
             text-align: center;
         }
-        body {
-            height: 96vh;
-            width: 96vw;
+        html, body {
+            min-height: 100vh;
         }
         header {
-            width: 100%;
             background-color: black;
             color: white;
+
         }
-        main p {
+        header h1 {
+            font-variant: small-caps;
+            padding-top: 50px;
+        }
+        header p {
+            padding-bottom: 50px;
+        }
+        header a, footer a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+        header a:hover, footer a:hover {
+            text-decoration: underline;
+        }
+        section {
+            line-height: 2em;
+            padding-left: 45px;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+        }
+        section.normal {
+            background-color: aquamarine;
+        }
+        section p {
+            padding: 10px;
             margin: 20px;
             text-align: left;
             font-family: var(--font-comic);
         }
+        section.image p {
+            width: 450px;
+            background-color: rgba(0, 0, 0, 0.877);
+            color: white;
+            border-radius: 10px;
+        }
         footer {
-            position:absolute;
-            display: none;
-            top: 100%;
-            width: 100%;
             background-color: black;
+            padding: 10px;
             color: white;
         }
