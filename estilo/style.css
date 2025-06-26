@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+ @font-face {
+            font-family: 'comic';
+            src: url('fonts/comicneuesansid/ComicNeueSansID.ttf') format('opentype');
+            font-weight: bold;
+        }
+        :root {
+            --font-comic : 'comic' , san-serif;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            text-align: center;
+        }
+        body {
+            height: 96vh;
+            width: 96vw;
+        }
+        header {
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+        main p {
+            margin: 20px;
+            text-align: left;
+            font-family: var(--font-comic);
+        }
+        footer {
+            position:absolute;
+            display: none;
+            top: 100%;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
